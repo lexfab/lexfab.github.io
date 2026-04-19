@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f9ff",
+                    "primary": "#003895",
+                    "surface-container": "#e6eeff",
+                    "on-surface": "#121c2b",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#bccbff",
+                    "surface-tint": "#3359b6",
+                    "surface-container-low": "#f0f3ff",
+                    "inverse-surface": "#273140",
+                    "inverse-primary": "#b3c5ff",
+                    "background": "#f9f9ff",
+                    "secondary-fixed-dim": "#bdc7db",
+                    "secondary-fixed": "#d9e3f7",
+                    "on-primary-fixed-variant": "#11409d",
+                    "on-background": "#121c2b",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#004e60",
+                    "surface-container-high": "#dee9fd",
+                    "primary-fixed": "#dbe1ff",
+                    "on-secondary-container": "#596374",
+                    "tertiary": "#004657",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#6ddbff",
+                    "outline": "#747683",
+                    "on-surface-variant": "#434652",
+                    "surface-variant": "#d9e3f7",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-container-highest": "#d9e3f7",
+                    "tertiary-fixed": "#b7eaff",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#005f75",
+                    "surface-dim": "#d0daef",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#001f28",
+                    "secondary-container": "#d6e0f4",
+                    "outline-variant": "#c4c6d4",
+                    "on-primary-fixed": "#001849",
+                    "tertiary-fixed-dim": "#4cd6ff",
+                    "secondary": "#555f70",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#121c2b",
+                    "primary-container": "#2951ae",
+                    "on-secondary-fixed-variant": "#3d4758",
+                    "surface-bright": "#f9f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-black text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+                LexFab
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-semibold text-primary transition-colors" href="resources.html">Resources</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="index.html">Demo</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-sm font-bold text-slate-600 hover:text-primary" href="signup.html">Login</a>
+<a class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" href="signup.html">Sign Up</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20"><!-- Hero Section -->
+<section class="pt-32 pb-20 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                Knowledge Hub
+            </div>
+<h1 class="text-5xl md:text-7xl font-bold text-slate-900 tracking-tight mb-8">
+                Intelligence, <span class="text-primary">Architected.</span>
+</h1>
+<p class="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-12">
+                Access premium guides, expert legal analysis, and technical documentation to master the LexFab ecosystem.
+            </p>
+<div class="max-w-2xl mx-auto relative group">
+<span class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full h-16 pl-14 pr-6 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-slate-200/50 focus:ring-4 focus:ring-primary/10 focus:border-primary transition-all outline-none text-slate-900 placeholder:text-slate-400" placeholder="Search for guides, case tracking tips, or FAQs..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Featured Blog Section -->
+<section class="py-24 px-6 bg-slate-50/50">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 mb-2">Legal Insights Blog</h2>
+<p class="text-slate-500">Expert analysis on modernizing your legal workflow.</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="resources.html">
+                    View All Posts <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaNWvjFuFPlpFayEB_IdSyqOkpYZx6z-aQC-0FJzfoQC6elaaEyJSiMvkDzKrUEyNoq-KtMKEa9_jYtyrInueLmSGHV5_56_4HpFFjZKFBxHS2W2Z2fo6TAi9cHG6RAEMHFRegStgzh8C-qVv6rp5IY5CmZ4ZgiDuuvdRMELIPk1-J5VAcp2434UB1lJQP0w-0ixL8SJgEAwGRJmerGrT1ASdO4dcUmw9j48EPves9dWgz8ORqN1L0VMSUArhn2npPgcmdnaAoeFw"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">Strategy</span>
+<span class="text-xs text-slate-400 font-medium">8 min read</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors mb-3">How to track cases efficiently</h3>
+<p class="text-slate-600 text-sm leading-relaxed line-clamp-2">Mastering the art of digital docket management to ensure no hearing is ever missed in high-volume litigation.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmruYhzpNWX7JkaifEmVXVUJILM4HI2JdSoivFixv69Cd-qcJGCsiivvmkt91ZxDSMGS3hXjoz0x2Yhzm7TkzLQzhEjh2fWUA1Ejf0xgQGAoOUHQh9k7sydpth3KVYOJZWeDjNEgN9w5SPZyiW2sHQIupYu6g1lGz2aAv4az85p91IWMfWnvgAfVYLt-LfEsO8i2UdUIiqbwelJtuqXk4KHUP0_UF9C6GPkPXzGAZCE6uaz1cKRzpzRA8ywnTUu045yAeOmQhCKRY"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">Education</span>
+<span class="text-xs text-slate-400 font-medium">12 min read</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors mb-3">Understanding cause list</h3>
+<p class="text-slate-600 text-sm leading-relaxed line-clamp-2">A comprehensive guide to interpreting daily and weekly cause lists across various high courts and tribunals.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] rounded-2xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIHnJHNS0LUW5f197LrhDe13LEghPw7cpF6sUuv3abXvynTwxvqHDgtjOhj_rXEa2NBeQixsTj_aOVIw-kNDjraZxE8SXLNcsAAWKEu5l8AnDsOBQLitSqsj6MJuk_PtUGstANDS9GLEDF5QFxh_pqroDrqLY62eA_o3C7pfIivdoaWPqp3jAg3uo9ei_pPmtHr-wuj73eYtzssgr8E8u30IBlL9lyuuDzADc35MGlFl4vf-KgJP37brsTgqh-ukwlEH4ZkHrpHA4"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">Compliance</span>
+<span class="text-xs text-slate-400 font-medium">5 min read</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors mb-3">Digital Filings: 2024 Standards</h3>
+<p class="text-slate-600 text-sm leading-relaxed line-clamp-2">Staying ahead of the curve with the latest e-filing protocols and security standards in the legal landscape.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Guides Grid -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="text-primary font-bold text-xs uppercase tracking-widest">Documentation</span>
+<h2 class="text-4xl font-bold text-slate-900 mt-2">Product Guides</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-slate-900 rounded-3xl p-10 text-white relative overflow-hidden group">
+<div class="relative z-10">
+<div class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<h3 class="text-3xl font-bold mb-4">How to use eCourts data</h3>
+<p class="text-slate-400 text-lg mb-8 max-w-lg">Learn how LexFab bridges the gap between raw court data and actionable legal intelligence.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3.5 rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-all">
+                                Read Full Guide <span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+<img class="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOMPtO_Sp2TlT_9Gvd3GvtkV9uyjUL0TkSmHSMfq6Omz773yNJNWsgzhCKQFPPRZgEJFRDcAfHDQkDDUyKSnzpJhCf7G_Wk7kJBpzDwAyMlpg3ZooyN2P6ohFtoS0QHnjpv9oagaRRXDOKVIhvfJpsHqiuk7EZYJ6pKs54nmKDC9tbZvvd_LboIJCK0Oo0LyLapnFlWsK_TG4_6r7hziDwqPHpC8nrO_kGpbOTqMQhx2hipHt-uAE5-sQrScdmDO5IADgnQtgspEw"/>
+</div>
+<div class="bg-white border border-slate-200 rounded-3xl p-10 flex flex-col justify-between group hover:border-primary transition-colors">
+<div>
+<div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">insights</span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 mb-4">Case Analytics Setup</h3>
+<p class="text-slate-500 mb-8">A step-by-step walkthrough for configuring your practice dashboard.</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold group-hover:gap-3 transition-all" href="resources.html">
+                        Start Setup <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="bg-white border border-slate-200 rounded-3xl p-10 flex flex-col justify-between group hover:border-primary transition-colors">
+<div>
+<div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 mb-4">Team Collaboration</h3>
+<p class="text-slate-500 mb-8">Managing multi-user access control and shared case folders.</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold group-hover:gap-3 transition-all" href="resources.html">
+                        View Guide <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="md:col-span-2 bg-slate-100 rounded-3xl p-10 flex items-center justify-between">
+<div>
+<h3 class="text-2xl font-bold text-slate-900 mb-2">LexFab API Documentation</h3>
+<p class="text-slate-500">For developers looking to integrate our legal database directly.</p>
+</div>
+<button class="px-8 py-3.5 bg-white border border-slate-200 rounded-xl font-bold hover:border-primary hover:text-primary transition-all">
+                        API Reference
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24 px-6 bg-slate-50/50">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+<p class="text-slate-500">Quick answers to common inquiries about our platform.</p>
+</div>
+<div class="space-y-4">
+<div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left">
+<span class="font-bold text-slate-900">How often is the eCourts data updated?</span>
+<span class="material-symbols-outlined text-slate-400">add</span>
+</button>
+</div>
+<div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left">
+<span class="font-bold text-slate-900">Can I export my case history into Excel or PDF?</span>
+<span class="material-symbols-outlined text-slate-400">add</span>
+</button>
+</div>
+<div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left">
+<span class="font-bold text-slate-900">Does LexFab provide legal advice?</span>
+<span class="material-symbols-outlined text-slate-400">add</span>
+</button>
+</div>
+<div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left">
+<span class="font-bold text-slate-900">How secure is my firm's sensitive case data?</span>
+<span class="material-symbols-outlined text-slate-400">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Help Banner -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto bg-primary rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden flex flex-col md:flex-row items-center justify-between">
+<div class="relative z-10 max-w-xl text-center md:text-left">
+<h2 class="text-4xl font-bold mb-6">Still need assistance?</h2>
+<p class="text-primary-container/80 text-xl mb-10">Our dedicated support team of legal-tech experts is available 24/7 to help you.</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-4">
+<button class="bg-white text-primary px-10 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all">Visit Help Center</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-2xl font-bold hover:bg-white/20 transition-all">Contact Support</button>
+</div>
+</div>
+<div class="relative z-10 mt-12 md:mt-0">
+<div class="w-48 h-48 bg-white/10 rounded-[2rem] flex items-center justify-center rotate-12">
+<span class="material-symbols-outlined text-7xl">support_agent</span>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-24 pb-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-2 md:col-span-1">
+<a class="text-2xl font-black flex items-center gap-2 mb-6" href="index.html">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+                    LexFab
+                </a>
+<p class="text-slate-400 text-sm leading-relaxed">
+                    The architectural standard for modern legal tech. Built for efficiency, designed for authority.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="about.html">Vision</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="about.html">Roadmap</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-primary font-bold" href="resources.html">Blog</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="resources.html">Help Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="signup.html">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="signup.html">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+<p>© 2024 LexFab Architectural Legal Tech. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#"><i class="fab fa-twitter"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="fab fa-linkedin"></i></a>
+<a class="hover:text-white transition-colors" href="#"><i class="fab fa-github"></i></a>
+</div>
+</div>
+</div>
+</footer>
+<button class="fixed bottom-8 right-8 z-[100] flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-full shadow-2xl hover:bg-primary-container transition-all hover:scale-105 group active:scale-95">
+<span class="material-symbols-outlined text-xl transition-transform group-hover:rotate-12">rate_review</span>
+<span class="font-bold tracking-wide text-sm">Feedback</span>
+</button>
+</body></html>
