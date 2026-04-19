@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LexFab | Secure Access</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f9f9ff",
+                        "primary": "#003895",
+                        "surface-container": "#e6eeff",
+                        "on-surface": "#121c2b",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#bccbff",
+                        "surface-tint": "#3359b6",
+                        "surface-container-low": "#f0f3ff",
+                        "inverse-surface": "#273140",
+                        "inverse-primary": "#b3c5ff",
+                        "background": "#f9f9ff",
+                        "secondary-fixed-dim": "#bdc7db",
+                        "secondary-fixed": "#d9e3f7",
+                        "on-primary-fixed-variant": "#11409d",
+                        "on-background": "#121c2b",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004e60",
+                        "surface-container-high": "#dee9fd",
+                        "primary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#596374",
+                        "tertiary": "#004657",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#6ddbff",
+                        "outline": "#747683",
+                        "on-surface-variant": "#434652",
+                        "surface-variant": "#d9e3f7",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container-highest": "#d9e3f7",
+                        "tertiary-fixed": "#b7eaff",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#005f75",
+                        "surface-dim": "#d0daef",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#001f28",
+                        "secondary-container": "#d6e0f4",
+                        "outline-variant": "#c4c6d4",
+                        "on-primary-fixed": "#001849",
+                        "tertiary-fixed-dim": "#4cd6ff",
+                        "secondary": "#555f70",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#121c2b",
+                        "primary-container": "#2951ae",
+                        "on-secondary-fixed-variant": "#3d4758",
+                        "surface-bright": "#f9f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .status-pillar {
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+<!-- Auth Shell Navigation (Simplified TopAppBar) -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tight text-[#003895]" href="index.html">LexFab</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 font-medium hover:text-[#2951AE] transition-colors duration-200" href="about.html">About</a>
+<a class="text-slate-600 font-medium hover:text-[#2951AE] transition-colors duration-200" href="resources.html">Resources</a>
+<a class="px-5 py-2 text-[#003895] font-semibold hover:bg-surface-container transition-all rounded-xl" href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="min-h-screen flex items-center justify-center pt-20 px-4 md:px-0">
+<!-- Asymmetric Layout Container -->
+<div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-full shadow-2xl bg-surface-container-lowest">
+<!-- Left Panel: Content Reference / Visual -->
+<div class="lg:col-span-5 relative hidden lg:block overflow-hidden min-h-[700px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="monochromatic blue tone architectural blueprint overlay on a sleek modern law office interior with high ceilings and natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2K1KnFNEukaToxj0txgpjgzkjpg_N0C3CWXIJArfmNn8RyT1wHcAq2S7hP9LZTLHXTK2QxhVkGqR5SCMT6XEymSokWcIBeGXnd2OsMzt0SZfVwzZXDNaoaftN1aMhyWFLpuXdItrnBSe-wY3-E2M1h2Z7tr5FGQVWsUvXrIYWnZknPW_eZtqJPIHa7V-JOUsReYmIGdf70i6bA1Y3y_DJNyWnkoNysraXGGVjEAcj8TNRHLExctXjfXn7qTVp9CpHLyxf1gqmrJU"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-brightness-75 mix-blend-multiply"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-12 text-white">
+<div class="space-y-6 max-w-md">
+<span class="text-xs font-bold tracking-[0.2em] uppercase opacity-80">The Architectural Guardian</span>
+<h1 class="text-4xl font-bold tracking-tight leading-tight">Securing the foundation of your legal practice.</h1>
+<p class="text-lg opacity-90 font-light leading-relaxed">Experience a high-end editorial interface designed for precision, intentionality, and unwavering authority.</p>
+<div class="pt-8 space-y-4">
+<div class="flex items-center gap-4 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
+<span class="material-symbols-outlined text-white" data-icon="verified_user">verified_user</span>
+<span class="text-sm font-medium">Enterprise-Grade Security Protocol</span>
+</div>
+<div class="flex items-center gap-4 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
+<span class="material-symbols-outlined text-white" data-icon="architecture">architecture</span>
+<span class="text-sm font-medium">Architectural Accuracy in Every Brief</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: The Auth Canvas -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center">
+<div class="max-w-md mx-auto w-full">
+<!-- Tab Switcher -->
+<div class="flex gap-8 mb-12 border-b border-outline-variant/30">
+<button class="pb-4 text-sm font-bold tracking-wider uppercase border-b-2 border-primary text-primary">Login</button>
+<a class="pb-4 text-sm font-bold tracking-wider uppercase text-outline hover:text-primary transition-colors" href="signup.html">Sign Up</a>
+</div>
+<div class="mb-10">
+<h2 class="text-3xl font-bold tracking-tight text-on-surface mb-2">Welcome Back</h2>
+<p class="text-secondary text-sm">Access your architectural legal workspace.</p>
+</div>
+<!-- Auth Form -->
+<form class="space-y-6">
+<div class="relative">
+<label class="block text-[10px] font-bold tracking-widest uppercase text-outline mb-1">Email Address</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 text-on-surface placeholder:text-outline/50 transition-all" placeholder="name@firm.com" type="email"/>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 text-outline/40">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<label class="block text-[10px] font-bold tracking-widest uppercase text-outline mb-1">Company Name <span class="text-outline/40 italic font-normal lowercase">(Optional)</span></label>
+<div class="relative group">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 text-on-surface placeholder:text-outline/50 transition-all" placeholder="LexFab Architectural Legal" type="text"/>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 text-outline/40">
+<span class="material-symbols-outlined" data-icon="business">business</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="flex justify-between items-end mb-1">
+<label class="block text-[10px] font-bold tracking-widest uppercase text-outline">Password</label>
+<a class="text-[10px] font-bold tracking-widest uppercase text-primary hover:underline" href="#">Forgot?</a>
+</div>
+<div class="relative group">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 text-on-surface placeholder:text-outline/50 transition-all" placeholder="••••••••" type="password"/>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 text-outline/40 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</div>
+</div>
+</div>
+<div class="pt-4 space-y-4">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:scale-[0.98] transition-all duration-100 flex justify-center items-center gap-3" type="submit">
+                            Sign In
+                            <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="flex items-center gap-4 py-2">
+<div class="h-px bg-outline-variant/30 flex-1"></div>
+<span class="text-[10px] font-bold tracking-widest uppercase text-outline">Or Secure Login via</span>
+<div class="h-px bg-outline-variant/30 flex-1"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-on-surface" data-icon="sms">sms</span>
+<span class="text-xs font-bold uppercase tracking-tight">OTP Login</span>
+</button>
+<a class="flex items-center justify-center gap-2 py-3 px-4 border border-outline-variant/30 rounded-xl hover:bg-surface-container-low transition-colors" href="contact.html">
+<span class="material-symbols-outlined text-on-surface" data-icon="call">call</span>
+<span class="text-xs font-bold uppercase tracking-tight">Contact</span>
+</a>
+</div>
+</div>
+</form>
+<!-- Trust Indicators -->
+<div class="mt-16 pt-8 border-t border-outline-variant/20 flex flex-wrap gap-x-8 gap-y-4 justify-center">
+<div class="flex items-center gap-2 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+<span class="text-[10px] font-black tracking-widest uppercase">AES-256 Secure</span>
+</div>
+<div class="flex items-center gap-2 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+<span class="material-symbols-outlined" data-icon="gpp_good">gpp_good</span>
+<span class="text-[10px] font-black tracking-widest uppercase">SOC2 Type II</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="mb-16">
+<span class="text-[10px] font-bold tracking-[0.3em] uppercase text-primary block mb-4">Security Protocol</span>
+<h3 class="text-3xl font-bold tracking-tight max-w-xl leading-snug">Multiple layers of verification to ensure your firm's data remains proprietary.</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Status Pillar Card 1 -->
+<div class="bg-surface-container-low p-8 relative overflow-hidden group rounded-xl">
+<div class="status-pillar bg-tertiary"></div>
+<div class="mb-6 h-12 w-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary" data-icon="key">key</span>
+</div>
+<h4 class="font-bold text-xl mb-3">Multi-Factor OTP</h4>
+<p class="text-secondary text-sm leading-relaxed">Secondary device verification via SMS or Authenticator apps integrated at the kernel level.</p>
+</div>
+<!-- Status Pillar Card 2 -->
+<div class="bg-surface-container-low p-8 relative overflow-hidden group rounded-xl">
+<div class="status-pillar bg-primary"></div>
+<div class="mb-6 h-12 w-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="fingerprint">fingerprint</span>
+</div>
+<h4 class="font-bold text-xl mb-3">Biometric Integration</h4>
+<p class="text-secondary text-sm leading-relaxed">Support for system-level biometric passkeys reducing reliance on legacy passwords.</p>
+</div>
+<!-- Status Pillar Card 3 -->
+<div class="bg-surface-container-low p-8 relative overflow-hidden group rounded-xl">
+<div class="status-pillar bg-surface-tint"></div>
+<div class="mb-6 h-12 w-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-surface-tint" data-icon="history">history</span>
+</div>
+<h4 class="font-bold text-xl mb-3">Audit Logs</h4>
+<p class="text-secondary text-sm leading-relaxed">Granular activity tracking and location-based access monitoring for every session.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/50 bg-[#f0f3ff]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<a class="text-lg font-black text-[#003895] mb-4 inline-block" href="index.html">LexFab</a>
+<p class="text-slate-500 text-sm leading-relaxed">Building the future of legal documentation through architectural precision.</p>
+</div>
+<div>
+<h5 class="font-bold text-on-surface mb-4">Platform</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="index.html">Vision</a></li>
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="product.html">Roadmap</a></li>
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="resources.html">Blog</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-on-surface mb-4">Resources</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="resources.html">Help Center</a></li>
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 text-sm hover:underline decoration-[#003895] underline-offset-4" href="#">Terms</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-on-surface mb-4">Contact</h5>
+<p class="text-slate-500 text-sm italic mb-2">Available 24/7 for Enterprise Clients</p>
+<div class="flex gap-4">
+<a class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="support_agent" href="contact.html">support_agent</a>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="hub">hub</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs tracking-wide">© 2024 LexFab Architectural Legal Tech. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="text-[10px] font-bold tracking-widest uppercase text-slate-400">System Status: Operational</span>
+</div>
+</div>
+</footer>
+<button aria-label="Feedback" class="fixed right-0 top-1/2 -rotate-90 translate-x-[40%] hover:translate-x-[35%] z-[60] bg-primary text-white px-6 py-2.5 rounded-t-xl shadow-2xl flex items-center gap-2 transition-all duration-300 font-bold text-xs uppercase tracking-widest border-x border-t border-white/20">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+    Feedback
+</button>
+</body></html>
