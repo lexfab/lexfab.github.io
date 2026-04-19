@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | LexFab Legal Technologies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001849",
+                    "surface-bright": "#f9f9ff",
+                    "surface": "#f9f9ff",
+                    "primary": "#003895",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d0daef",
+                    "surface-container-low": "#f0f3ff",
+                    "surface-container": "#e6eeff",
+                    "secondary": "#555f70",
+                    "on-primary-container": "#bccbff",
+                    "on-secondary-fixed": "#121c2b",
+                    "inverse-primary": "#b3c5ff",
+                    "on-surface-variant": "#434652",
+                    "on-secondary-container": "#596374",
+                    "on-primary-fixed-variant": "#11409d",
+                    "on-background": "#121c2b",
+                    "tertiary-fixed-dim": "#4cd6ff",
+                    "secondary-fixed-dim": "#bdc7db",
+                    "tertiary-container": "#005f75",
+                    "on-tertiary-container": "#6ddbff",
+                    "primary-container": "#2951ae",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-container-highest": "#d9e3f7",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c4c6d4",
+                    "inverse-surface": "#273140",
+                    "secondary-container": "#d6e0f4",
+                    "background": "#f9f9ff",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-surface": "#121c2b",
+                    "tertiary-fixed": "#b7eaff",
+                    "on-tertiary-fixed": "#001f28",
+                    "outline": "#747683",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#ebf1ff",
+                    "secondary-fixed": "#d9e3f7",
+                    "tertiary": "#004657",
+                    "on-tertiary-fixed-variant": "#004e60",
+                    "surface-tint": "#3359b6",
+                    "surface-variant": "#d9e3f7",
+                    "surface-container-high": "#dee9fd",
+                    "on-secondary-fixed-variant": "#3d4758"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar (Shared Component) -->
+<!-- Suppression Logic: Suppressed for Transactional/Sign-up flow to prioritize content canvas -->
+<!-- SideNavBar (Shared Component - Feedback Sticky) -->
+<aside class="fixed right-0 top-1/2 -translate-y-1/2 rounded-l-lg bg-white dark:bg-slate-900 shadow-xl dark:shadow-2xl fixed right-0 z-40 translate-x-1 hover:translate-x-0 transition-transform">
+<button class="bg-[#003895] text-white p-3 rotate-180 [writing-mode:vertical-lr] font-sans text-xs uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined transform -rotate-90">rate_review</span>
+            Feedback
+        </button>
+</aside>
+<main class="min-h-screen flex flex-col md:flex-row">
+<!-- Left Column: Branding & Value Proposition -->
+<section class="hidden md:flex md:w-5/12 bg-primary relative overflow-hidden flex-col justify-between p-12 lg:p-16">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-10" data-alt="abstract geometric pattern of architectural lines and grids in deep navy blue and primary tones"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-container rounded-full blur-[120px] opacity-30"></div>
+<div class="relative z-10">
+<a class="text-2xl font-bold tracking-tighter text-white" href="/">LexFab</a>
+</div>
+<div class="relative z-10">
+<div class="mb-6">
+<span class="text-on-primary-container text-xs font-bold tracking-widest uppercase py-1 px-3 bg-white/10 rounded-full">Intelligent Legal Drafting</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
+                    The Architectural Guardian of your legal workflow.
+                </h1>
+<p class="text-on-primary-container text-lg max-w-md leading-relaxed opacity-90">
+                    Join thousands of elite law firms leveraging AI-driven precision to automate drafting and mitigate risk.
+                </p>
+</div>
+<div class="relative z-10 border-l-2 border-tertiary-fixed pl-6 py-2">
+<p class="text-white italic text-sm opacity-80">
+                    "LexFab has fundamentally redefined how our associates approach case structure."
+                </p>
+<p class="text-tertiary-fixed text-xs font-bold mt-2 uppercase tracking-wider">Managing Partner, Silver &amp; Crane</p>
+</div>
+</section>
+<!-- Right Column: Sign Up Form -->
+<section class="flex-1 flex items-center justify-center p-6 sm:p-12 lg:p-24 bg-surface-bright relative">
+<!-- Mobile Logo -->
+<div class="absolute top-8 left-8 md:hidden">
+<span class="text-2xl font-bold tracking-tighter text-primary">LexFab</span>
+</div>
+<div class="w-full max-w-md">
+<div class="mb-10">
+<h2 class="text-3xl font-bold tracking-tight text-on-surface mb-2">Create your account</h2>
+<p class="text-on-surface-variant text-sm">Experience the future of legal technology.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold tracking-widest text-on-surface-variant uppercase" for="full_name">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-colors text-on-surface placeholder:text-outline-variant/60 text-sm" id="full_name" name="full_name" placeholder="Alexander Hamilton" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold tracking-widest text-on-surface-variant uppercase" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-colors text-on-surface placeholder:text-outline-variant/60 text-sm" id="email" name="email" placeholder="a.hamilton@lawfirm.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold tracking-widest text-on-surface-variant uppercase" for="firm_name">Firm Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-colors text-on-surface placeholder:text-outline-variant/60 text-sm" id="firm_name" name="firm_name" placeholder="Hamilton &amp; Associates" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold tracking-widest text-on-surface-variant uppercase" for="password">Password</label>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 transition-colors text-on-surface placeholder:text-outline-variant/60 text-sm" id="password" name="password" placeholder="••••••••••••" type="password"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-on-surface-variant/50 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-semibold tracking-tight hover:bg-primary-container transition-all shadow-lg shadow-primary/10 active:scale-95 duration-200" type="submit">
+                            Complete Registration
+                        </button>
+</div>
+<div class="flex items-center gap-4 py-4">
+<div class="h-px bg-outline-variant/20 flex-1"></div>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant/50 font-bold">Or sign up with</span>
+<div class="h-px bg-outline-variant/20 flex-1"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 border border-outline-variant/20 py-3 rounded-lg hover:bg-surface-container-low transition-colors active:scale-95 duration-200" type="button">
+<img alt="Google" class="w-4 h-4" data-alt="Google colorful brand logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2R0Nz-HQao3vYVix6qvId1ppd3sEDiOXvqUHkqMPhHIoEa4rrsclbZViTZRhFfz01xHWJlqzkTs54nLZSaaQJxKdkl1eLKKwQtUJCbeuvHweFyZ899YbzcKTWn7elQJRwJfAQH_whGSNL60gSPm5ykoCPPRBMsNtOe_429lRAf14kxbMm19vtATCMGr_J6k7ORSi0RF7AYYCrKow7OfFFslBYHvv35te6REUKEc48cw7cJ0EHiEXZiCUzSanZ43JSdsBbpfZ9bhQ"/>
+<span class="text-sm font-medium">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 border border-outline-variant/20 py-3 rounded-lg hover:bg-surface-container-low transition-colors active:scale-95 duration-200" type="button">
+<span class="material-symbols-outlined text-lg">domain</span>
+<span class="text-sm font-medium">SSO</span>
+</button>
+</div>
+</form>
+<div class="mt-10 text-center">
+<p class="text-on-surface-variant text-sm">
+                        Already have an account? 
+                        <a class="text-primary font-bold hover:underline decoration-2 underline-offset-4 ml-1" href="#">Login</a>
+</p>
+</div>
+<div class="mt-12">
+<p class="text-[10px] text-on-surface-variant/60 text-center leading-relaxed">
+                        By signing up, you agree to the <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>. LexFab uses industry-standard encryption to protect your firm's data.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-12 bg-slate-50 dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center px-12 border-t border-slate-200 dark:border-slate-800">
+<div class="mb-6 md:mb-0">
+<span class="font-bold text-[#003895]">LexFab</span>
+<p class="font-sans text-xs text-slate-500 dark:text-slate-400 mt-2">© 2024 LexFab Legal Technologies. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-sans text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline decoration-slate-300" href="#">Privacy Policy</a>
+<a class="font-sans text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline decoration-slate-300" href="#">Terms of Service</a>
+<a class="font-sans text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline decoration-slate-300" href="#">Security</a>
+<a class="font-sans text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline decoration-slate-300" href="#">Cookie Settings</a>
+</div>
+</footer>
+</body></html>
