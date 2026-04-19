@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Features | LexFab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#004e60",
+                    "inverse-surface": "#273140",
+                    "secondary-container": "#d6e0f4",
+                    "on-tertiary-fixed": "#001f28",
+                    "on-surface-variant": "#434652",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#596374",
+                    "primary-container": "#2951ae",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "surface-variant": "#d9e3f7",
+                    "secondary-fixed-dim": "#bdc7db",
+                    "on-primary-fixed": "#001849",
+                    "surface-dim": "#d0daef",
+                    "tertiary-fixed-dim": "#4cd6ff",
+                    "surface-container": "#e6eeff",
+                    "on-primary-fixed-variant": "#11409d",
+                    "on-primary-container": "#bccbff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c4c6d4",
+                    "on-surface": "#121c2b",
+                    "background": "#f9f9ff",
+                    "on-tertiary-container": "#6ddbff",
+                    "tertiary-fixed": "#b7eaff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f9f9ff",
+                    "surface-container-highest": "#d9e3f7",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#dee9fd",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-container": "#005f75",
+                    "on-background": "#121c2b",
+                    "primary": "#003895",
+                    "on-secondary-fixed-variant": "#3d4758",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-tint": "#3359b6",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#121c2b",
+                    "secondary": "#555f70",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-container-low": "#f0f3ff",
+                    "tertiary": "#004657",
+                    "inverse-primary": "#b3c5ff",
+                    "error": "#ba1a1a",
+                    "outline": "#747683",
+                    "secondary-fixed": "#d9e3f7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .status-pillar {
+            position: relative;
+        }
+        .status-pillar::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #004657; /* tertiary */
+        }
+        .ai-gradient {
+            background: radial-gradient(circle at top right, #003895 0%, #001849 100%);
+        }
+        .ai-card-glow:hover {
+            box-shadow: 0 0 25px rgba(188, 203, 255, 0.3);
+            border-color: rgba(188, 203, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-blue-900" style="">LexFab</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-blue-800 transition-colors font-inter tracking-tight" href="#" style="">Platform</a>
+<a class="text-blue-900 font-semibold border-b-2 border-blue-900 pb-1 font-inter tracking-tight" href="#" style="">Features</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors font-inter tracking-tight" href="#" style="">Pricing</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors font-inter tracking-tight" href="#" style="">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-slate-600 font-medium hover:opacity-80 transition-all scale-95 active:duration-100" style="">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-all scale-95 active:duration-100" style="">Get Started</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section: Asymmetric Editorial Layout -->
+<section class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase block mb-4" style="">Precision Engineering for Law</span>
+<h1 class="text-5xl lg:text-7xl font-bold tracking-tighter text-on-surface leading-tight mb-8" style="">
+                LexFab - The Architecture of <span class="text-primary italic" style="">Modern Legal Flow</span>.
+            </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl mb-10" style="">
+                LexFab isn't just case management. It's a high-performance structural framework designed to manage complexity, automate drudgery, and elevate legal strategy.
+            </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-3 px-4 py-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="verified" style="">verified</span>
+<span class="text-sm font-semibold" style="">ISO 27001 Certified</span>
+</div>
+<div class="flex items-center gap-3 px-4 py-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="bolt" style="">bolt</span>
+<span class="text-sm font-semibold" style="">AI-Powered Intelligence</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-lowest rounded-full shadow-lg overflow-hidden border-[12px] border-surface-container-low">
+<img alt="Legal Professional" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMGVgAya-Fm-hoLKZaPzOxgKXQWagvJHoExW-AeT4XxEjG53WlUg9MaJnbTvdjtW6vaqDKsS9DgUg0Lko089NO7M6YC3VyOT0BJ8SYKTA4O29reuYz3isA-YuerwJW2xUsFCEcGQKGwVHUY02eEcjGtv781HD_XyNiyDnYYS2T7uSyBZtbfg8QRRtYp0adz94xDH0Yk3bFQRYUdvvl_bggK9U3xWYwduFQrSQBSsqZFglpCTKLV9Cesvpjykk3UbpWJKS9FzwufdE" style=""/>
+</div>
+<!-- Floating Card -->
+<div class="absolute -bottom-6 -left-6 bg-primary text-on-primary p-6 rounded-xl shadow-2xl max-w-xs">
+<p class="text-sm font-medium opacity-80 mb-2" style="">System Performance</p>
+<div class="text-3xl font-bold mb-4" style="">99.9% Uptime</div>
+<div class="h-1.5 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-white w-[99%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Features: The Innovation Spotlight (Enhanced) -->
+<section class="ai-gradient text-on-primary py-24 relative overflow-hidden">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/20 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary-fixed-dim/10 blur-[100px] rounded-full -ml-32 -mb-32"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="mb-16 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full mb-4 border border-white/20">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim" data-icon="smart_toy" style='font-variation-settings: "FILL" 1;'>smart_toy</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-white uppercase" style="">Advanced Intelligence</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4" style="">The LexFab Intelligence Engine</h2>
+<p class="text-on-primary/70 max-w-2xl text-lg" style="">Harness cutting-edge legal AI to transform your workflow from manual to hyper-automated.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Case Summarization -->
+<div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 ai-card-glow transition-all duration-300">
+<div class="w-14 h-14 bg-gradient-to-br from-primary-container to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="auto_awesome" style='font-variation-settings: "FILL" 1;'>auto_awesome</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Case Summarization</h3>
+<p class="text-on-primary/80 leading-relaxed text-sm" style="">Condense thousands of pages into executive briefs instantly with our proprietary LLM architecture tailored for legal precedents.</p>
+</div>
+<!-- Translation -->
+<div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 ai-card-glow transition-all duration-300">
+<div class="w-14 h-14 bg-gradient-to-br from-primary-container to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="translate" style="">translate</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Translation</h3>
+<p class="text-on-primary/80 leading-relaxed text-sm" style="">Legal-grade translation for 45+ languages. Preserve jurisdictional nuances and complex legal formatting automatically.</p>
+</div>
+<!-- Drafting Notices -->
+<div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 ai-card-glow transition-all duration-300">
+<div class="w-14 h-14 bg-gradient-to-br from-primary-container to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="edit_note" style="">edit_note</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Drafting Notices</h3>
+<p class="text-on-primary/80 leading-relaxed text-sm" style="">Generate automated notices and procedural documents based on active case facts, current statutes, and specific court rules.</p>
+</div>
+<!-- Chat with Documents -->
+<div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 ai-card-glow transition-all duration-300">
+<div class="w-14 h-14 bg-gradient-to-br from-primary-container to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="chat_bubble" style='font-variation-settings: "FILL" 1;'>chat_bubble</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Chat with Documents</h3>
+<p class="text-on-primary/80 leading-relaxed text-sm" style="">Query your entire document repository in natural language. Our DocChat interface finds needles in haystacks using semantic search.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Grid: Bento Style -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="mb-16">
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase block mb-4" style="">The Modular Suite</span>
+<h2 class="text-4xl font-bold tracking-tight" style="">Structured for High Stakes</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Case Management - Large Card -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<div class="status-pillar pl-6 mb-8">
+<h3 class="text-2xl font-bold mb-4" style="">Advanced Case Management</h3>
+<p class="text-on-surface-variant max-w-md" style="">The central nervous system of your firm. Rapid case intake, direct court integration, and dynamic tagging.</p>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-medium" style="">
+<span class="material-symbols-outlined text-primary" data-icon="add_circle" style="">add_circle</span> One-Click Case Creation
+                        </li>
+<li class="flex items-center gap-3 font-medium" style="">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance" style="">account_balance</span> E-Filing &amp; Court Sync
+                        </li>
+<li class="flex items-center gap-3 font-medium" style="">
+<span class="material-symbols-outlined text-primary" data-icon="filter_list" style="">filter_list</span> Multi-Dimensional Filtering
+                        </li>
+</ul>
+</div>
+<div class="mt-12 -mb-20 -mr-20 lg:absolute lg:bottom-0 lg:right-0 lg:w-1/2 opacity-20 lg:opacity-100 transition-opacity">
+<img alt="Dashboard Preview" class="rounded-tl-2xl shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPUXMcVMcU5hlHO0lPelqyoNoEH_290BDTUVKzLrYzPl7KD6iQ4syrvpu7MfdDmW6R4YOvfIHgkBUmG2i2uESE8yQv9cqhVqeI0KFDXpRWBQOl6cEF3rRNOJLEtF5EjQks4t1ClfkJCmJa37hQ3IsHxs074dKNjr-7YXz5FKYld5e37MBfmCoCE8_7DLRs0xC3QZxgI23qTbs_6VStjEjP4A6I7QP8EZXXDzWkk7S-s3fCoRC_9LPEVyXqSDA7emr7M39FqWijyoY" style=""/>
+</div>
+</div>
+<!-- Notifications - Tall Card -->
+<div class="lg:col-span-4 bg-surface-container-high rounded-xl p-10 flex flex-col">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="notifications_active" style='font-variation-settings: "FILL" 1;'>notifications_active</span>
+<h3 class="text-2xl font-bold mb-4" style="">Precision Alerts</h3>
+<p class="text-on-surface-variant mb-10" style="">Never miss a deadline. Our alerting system is built on urgency hierarchies.</p>
+<div class="space-y-4 mt-auto">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-error"></div>
+<div>
+<p class="text-xs font-bold uppercase opacity-60" style="">Hearing Reminder</p>
+<p class="text-sm font-semibold" style="">Supreme Court - Room 402</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-4 opacity-70">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div>
+<p class="text-xs font-bold uppercase opacity-60" style="">Daily Agenda</p>
+<p class="text-sm font-semibold" style="">8 New Tasks Assigned</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Calendar - Square Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest border border-outline-variant/20 rounded-xl p-10 shadow-sm">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6" data-icon="calendar_today" style="">calendar_today</span>
+<h3 class="text-2xl font-bold mb-4" style="">Firm Calendar</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">Global daily dashboard with hearing tracking and conflict detection integrated across all team calendars.</p>
+</div>
+<!-- Team & Collaboration - Wide Card -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="groups" style="">groups</span>
+<h3 class="text-2xl font-bold mb-4" style="">Seamless Teamwork</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">Assign cases, delegate tasks, and maintain absolute visibility over every action item in the firm.</p>
+</div>
+<div class="flex flex-col justify-center gap-3">
+<div class="flex -space-x-3 overflow-hidden mb-4">
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhnUn0m6nL_miQjLzO2czBS8rhanZ9gytf4GIalefSmRL_cKOyy47_QnQRq4twDrWSCOvYMfi7PAhBW2KL0CPD8-3nprmed1mhvEPDGxpP8Ge7f20MHwLGuvZht2oUmLaW9230deS9g4DDz76xcPg7EfAB3mg5Dn-zG4x_uQYsSLp0jculN2apviqRFmipvUF4-Nq3SfQlEnjBVm7f6-RYIXVb62ULnlC1Jrrhkur4In0N6f16lrBnjUbT3rW-FhHU9WbKbyf1WBU" style=""/>
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt1kEEiz7TbqGVgiGfFF2QNDRbjLPQrz2lfZ6po5zQ0SPU5Sg9mgDSh3tyYiqf7Bxh0hFXGeoTFFYo6ypgjAsE51nOcyRODRFhlAwlgRyDVrYbi4kRyB_PTWM8SYQ9OS6ripeHoJpTpMXlNEZjhWcku_yIn7K8NjWUoSdyiACeRFla44ZMf39e9PjC-f3Xa-3fZQ1Bafj_F8xCPHYeHaFK-kx7LLXz02QhuoMuStwUn4ZhGOi304BF1UVC1KAfpQ3hAr3fVUW-F_Q" style=""/>
+<img alt="" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxjZLqGg7j80f8nauPk7RYF7rbmWuvhqrCZPMS-2KLpf_BLcxpjtb-54NYwCISnjOoEd_R2R7F8d6uq8dWOVoxwjmJo54kxQKzzvNFpgzeWHXqZZyW0WbLdfPhTg4B_BOvakCOE0BGQVBe5AEK_000zdG07y0fF3NasChk-e_tnCqct5tp0NIOPKUMDhDYgb6qgCMs-E3bH6QhQS9UjtJCB6Pqfy6RU1z5YBsUcOtaqQB4MlqW24egG8JowduyPb8pryZWbqclb8A" style=""/>
+<div class="flex items-center justify-center h-10 w-10 rounded-full ring-2 ring-white bg-slate-200 text-[10px] font-bold" style="">+12</div>
+</div>
+<p class="text-xs font-semibold text-primary" style="">Collaborate in Real-Time</p>
+</div>
+</div>
+<!-- Documents - Full Width Asymmetric -->
+<div class="lg:col-span-12 grid grid-cols-1 lg:grid-cols-2 gap-0 overflow-hidden rounded-xl border border-outline-variant/10 shadow-sm">
+<div class="bg-surface-container-lowest p-12 lg:p-16">
+<span class="material-symbols-outlined text-5xl text-primary mb-8" data-icon="description" style="">description</span>
+<h3 class="text-3xl font-bold mb-6" style="">Omni-Channel Storage</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8" style="">Upload everything. LexFab handles PDF, DOCX, Images, and even audio. Our AI processes Voice Notes into structured legal memos automatically.</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="mic" style="">mic</span>
+<div>
+<h4 class="font-bold text-sm" style="">Voice Transcription</h4>
+<p class="text-xs text-on-surface-variant" style="">Record thoughts on the go, sync to case files.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="search_insights" style="">search_insights</span>
+<div>
+<h4 class="font-bold text-sm" style="">OCR Search</h4>
+<p class="text-xs text-on-surface-variant" style="">Full-text search within scanned documents.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-900 relative min-h-[300px]">
+<div class="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-black/80"></div>
+<img alt="Legal Archive" class="w-full h-full object-cover mix-blend-overlay opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAo6TJQWvrOH465TKb4pDn8TdQ7OkhYxbzyER7hpRbSw_3PLCd_Qu9UYFOXshpcRQYX6i3dqOaOt0lK5ul1_vURF0mS6Roji-Y6Q3MHiOFSgO2Gi_WimPaG6mn0av048bC0NodYQUgI4l74bA0tDkpKXLKPlNb_EtIDRaSX66EzmztcLUoEuGfdow2uSwrcUWho2285222WRXM-uwUq3ofN20mr9kNGy7hZJVNxyBrO1fftCloIVWTvAbLgiq8Vg2_KygyFruUg" style=""/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center p-8">
+<div class="inline-block p-4 bg-white/10 backdrop-blur-xl rounded-full mb-4">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="encrypted" style="">encrypted</span>
+</div>
+<p class="text-white font-bold text-xl tracking-tight" style="">Military Grade Encryption</p>
+<p class="text-white/60 text-sm" style="">AES-256 at rest and in transit.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="bg-primary-container text-on-primary-container p-12 lg:p-20 rounded-3xl flex flex-col items-center text-center">
+<h2 class="text-4xl font-bold tracking-tight mb-6" style="">Ready to Fabricate Your Success?</h2>
+<p class="text-lg opacity-80 max-w-2xl mb-10" style="">Join over 500 elite law firms who have standardized their practice on the LexFab framework.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-opacity-90 transition-all scale-95 active:duration-100" style="">Schedule Demo</button>
+<button class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all scale-95 active:duration-100" style="">View Pricing</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-blue-900 mb-2" style="">LexFab</div>
+<p class="text-slate-500 text-sm font-inter leading-relaxed" style="">© 2025 LexFab Global. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-sm font-inter text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Privacy Policy</a>
+<a class="text-sm font-inter text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Terms of Service</a>
+<a class="text-sm font-inter text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Legal Notice</a>
+<a class="text-sm font-inter text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Security</a>
+<a class="text-sm font-inter text-slate-500 hover:text-blue-600 hover:underline transition-all" href="#" style="">Contact</a>
+</div>
+</div>
+</footer>
+<!-- Feedback Trigger Button -->
+<button class="fixed right-0 top-1/2 -translate-y-1/2 translate-x-[40%] hover:translate-x-0 transition-transform duration-300 z-[60] bg-primary text-white py-3 px-6 rounded-l-xl shadow-2xl flex items-center gap-2 font-semibold vertical-text group" id="feedback-trigger" style="writing-mode: vertical-rl; transform: rotate(180deg) translateY(50%);">
+<span class="material-symbols-outlined rotate-90 group-hover:scale-110 transition-transform" data-icon="rate_review">rate_review</span>
+  Feedback
+</button>
+<!-- Feedback Modal -->
+<div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm transition-opacity duration-300" id="feedback-modal">
+<div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
+<div class="bg-primary p-6 text-white flex justify-between items-center">
+<div>
+<h3 class="text-2xl font-bold tracking-tight">Share Your Feedback</h3>
+<p class="text-white/80 text-sm mt-1">Help us refine the architecture of legal flow.</p>
+</div>
+<button class="text-white/80 hover:text-white transition-colors" id="close-modal">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<form class="p-8 space-y-5" id="feedback-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Name</label>
+<input class="w-full border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Mobile Number</label>
+<input class="w-full border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Email</label>
+<input class="w-full border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm" placeholder="john@firm.com" required="" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Firm Name</label>
+<input class="w-full border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm" placeholder="Lexington &amp; Associates" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Message</label>
+<textarea class="w-full border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm" placeholder="How can we improve your experience?" required="" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-800 transition-all shadow-lg hover:shadow-primary/20" type="submit">
+        Submit Feedback
+      </button>
+</form>
+</div>
+</div>
+<script>
+  const modal = document.getElementById('feedback-modal');
+  const modalContent = document.getElementById('modal-content');
+  const trigger = document.getElementById('feedback-trigger');
+  const closeBtn = document.getElementById('close-modal');
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.add('opacity-100');
+      modalContent.classList.remove('scale-95', 'opacity-0');
+      modalContent.classList.add('scale-100', 'opacity-100');
+    }, 10);
+  }
+
+  function closeModal() {
+    modalContent.classList.remove('scale-100', 'opacity-100');
+    modalContent.classList.add('scale-95', 'opacity-0');
+    modal.classList.remove('opacity-100');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  trigger.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.getElementById('feedback-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for your feedback! Our team will review it shortly.');
+    closeModal();
+  });
+</script></body></html>
